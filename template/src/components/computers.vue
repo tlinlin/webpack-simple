@@ -3,6 +3,7 @@
 		<myslots>
 			<div slot="CPU">{{cpu}}</div>
 			<div slot="GPU">{{gpu}}</div>
+			<div slot="Memory">{{memeray}}</div>
 		</myslots>
 	</div>
 </template>
@@ -14,6 +15,7 @@ export default {
 			msg: 'Your computer config',
 			cpu: 'Intel Core i10',
 			gpu: 'gtx1080',
+			memeray: 'Kingston 32G',
 			message: "hello"
 		}
 	},
