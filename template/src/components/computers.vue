@@ -9,6 +9,8 @@
 </template>
 <script>
 import myslots from "./myslots.vue";
+import { getRequest } from "../utils/axiosConfig";
+import URL from "../utils/url";
 export default {
 	data() {
 		return {
@@ -21,6 +23,24 @@ export default {
 	},
 	components: {
 		myslots
+	},
+	created() {
+		const data= {
+				id:1,
+				name:"zhangsan"
+		}
+		getRequest(URL.test,"get",data).then(res=>{
+		//	console.log(res,"+++++++++++++++++++++++++++=")
+		})
+
+		const postData = {
+			name: "lisi",
+			age: 23
+		}
+
+		getRequest(URL.home,"post",postData).then(res=>{
+		//	console.log(res,"+++++++++++++++++++++++++++=post")
+		})
 	}
 }
 </script>

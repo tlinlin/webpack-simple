@@ -2,6 +2,7 @@
     <div id="app">
         <router-link to="/myrender">Go to myrender</router-link>
         <router-link to="/myslots">Go to myslots</router-link>
+        <router-link to="/addRos">Go to addRos</router-link>
         <router-view></router-view>
         <h1>{{ msg }}</h1>
         <h2>Essential Links</h2>
