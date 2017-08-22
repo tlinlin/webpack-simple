@@ -5,7 +5,7 @@ import computer from "./components/computers.vue";
 import addRos from "./components/addros.vue";
 
 const routes = [
-    { path: '/myrender', component: home },
+    { path: '/home', component: home },
     { path: '/myslots', component: computer }
 ];
 vue.use(VueRouter);

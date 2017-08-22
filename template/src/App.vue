@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <router-link to="/myrender">Go to myrender</router-link>
+        <router-link to="/home">Go to home</router-link>
         <router-link to="/myslots">Go to myslots</router-link>
         <router-link to="/addRos">Go to addRos</router-link>
         <router-view></router-view>
@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
